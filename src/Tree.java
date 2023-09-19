@@ -11,9 +11,10 @@ import java.util.TreeSet;
         this.tree = new Treeset();
     }
 }*/
-}
 public class Tree <T> {
-    private Node<T> root;
+    private Node root1;
+
+    private T root;
     private List<T> subtree;
 
     public Tree() {
