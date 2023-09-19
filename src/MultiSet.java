@@ -5,7 +5,7 @@ public abstract class MultiSet {
 
     public abstract <T> boolean contains(T item);
 
-    public abstract boolean is_empty();
+    public abstract boolean isEmpty();
 
     public abstract <T> int count(T item);
 

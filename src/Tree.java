@@ -1,8 +1,31 @@
-import org.w3c.dom.Node;
-import java.util.*;
 import java.util.TreeSet;
 
 
+public class Tree <T> {
+    private TreeSet<T> tree;
+
+    public boolean isEmpty() {
+        return tree.isEmpty();
+    }
+
+    public int length() {
+        return tree.size();
+    }
+
+    public int count(T item) {
+        int count = 0;
+        for (T thing : tree) {
+            if (thing == item) {
+                count ++;
+            }
+        }
+        return count;
+    }
+
+    public boolean contains(T item) {
+        return tree.contains(item);
+    }
+}
 /*public class TreeSet <T> {
 
     private TreeSet tree;
@@ -105,21 +128,6 @@ public class Tree <T> {
          */
     }
 
-    public T extractLeaf() {
-        /*
-        Remove the leftmost leaf inside the tree and return that root value.
-         */
+    public String toString() {
+        return tree.toString();
     }
-
-    public void insert(T item) {
-
-    }
-
-    public boolean insertChild(T child, T parent) {
-        /*
-        Look for root that has same value as parent and add child in the subtrees of parent.
-        If it finds parent then return True.
-         */
-    }
-
-}
